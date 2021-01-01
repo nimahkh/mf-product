@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.ant-layout-footer {
+  opacity: 0.5;
+}
+.ant-layout {
+  background: transparent !important;
+}
+
+.site-layout {
+  padding: 0 50px 50px 50px;
+}
+
+.title {
+  background: rgb(145, 242, 121);
+}
+
+.items {
+  flex: 2 2 30%;
+  padding: 10px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
