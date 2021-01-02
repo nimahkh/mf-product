@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "cross-env umi build",
-    "start": "node server.js",
+    "start": "umi dev",
     "dev": "cross-env UMI_UI=none NODE_ENV=development concurrently \"umi dev\" \"nodemon server.js\"",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
@@ -10,8 +10,12 @@
     "test:coverage": "umi-test --coverage"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": ["prettier --write"],
-    "*.ts?(x)": ["prettier --parser=typescript --write"]
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
   },
   "engines": {
     "node": ">=10.0.0"

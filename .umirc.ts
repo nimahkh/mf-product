@@ -3,12 +3,12 @@ import { defineConfig } from "umi";
 const outputPath = "dist/";
 
 const env = process.env.NODE_ENV;
-const path = env === "development" ? "http://localhost:7101/" : outputPath;
+const path = env === "development" ? "http://localhost:8001/" : outputPath;
 
 export default defineConfig({
-  ssr: {
-    devServerRender: false
-  },
+  // ssr: {
+  //   devServerRender: false
+  // },
   antd: {
     dark: false,
     compact: true
