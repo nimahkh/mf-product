@@ -1,0 +1,9 @@
+{
+  "public": "dist",
+  "rewrites": [
+    {
+      "source": "/mf-product/*",
+      "destination": "/mf-product/index.html"
+    }
+  ]
+}

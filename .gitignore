@@ -18,3 +18,4 @@
 /.env.local
 .history
 mock
+.umi

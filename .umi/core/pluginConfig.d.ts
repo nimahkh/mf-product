@@ -205,5 +205,9 @@ export interface IConfigFromPlugins {
   request?: {
     dataField?: "";
   };
+  qiankun?: {
+    slave?: {};
+    master?: {};
+  };
   [k: string]: any;
 }

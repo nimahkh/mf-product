@@ -10,12 +10,8 @@
     "test:coverage": "umi-test --coverage"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
-    ]
+    "*.{js,jsx,less,md,json}": ["prettier --write"],
+    "*.ts?(x)": ["prettier --parser=typescript --write"]
   },
   "engines": {
     "node": ">=10.0.0"
@@ -23,6 +19,7 @@
   "dependencies": {
     "@ant-design/pro-layout": "^5.0.12",
     "@koa/cors": "^3.1.0",
+    "@rescripts/cli": "^0.0.15",
     "@umijs/preset-react": "^1.5.17",
     "@umijs/test": "^3.2.9",
     "lint-staged": "^10.0.7",
@@ -31,6 +28,7 @@
     "umi": "^3.3.3"
   },
   "devDependencies": {
+    "@umijs/plugin-qiankun": "^2.18.3",
     "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
     "got": "^11.5.0",
