@@ -10,14 +10,19 @@
     "test:coverage": "umi-test --coverage"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": ["prettier --write"],
-    "*.ts?(x)": ["prettier --parser=typescript --write"]
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
   },
   "engines": {
     "node": ">=10.0.0"
   },
   "dependencies": {
     "@ant-design/pro-layout": "^5.0.12",
+    "@koa/cors": "^3.1.0",
     "@umijs/preset-react": "^1.5.17",
     "@umijs/test": "^3.2.9",
     "lint-staged": "^10.0.7",
@@ -26,8 +31,6 @@
     "umi": "^3.3.3"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "yorkie": "^2.0.0",
     "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
     "got": "^11.5.0",
@@ -38,6 +41,8 @@
     "koa-static": "^5.0.0",
     "koa-websocket": "^6.0.0",
     "koa2-proxy-middleware": "^0.0.4",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "prettier": "^1.19.1",
+    "yorkie": "^2.0.0"
   }
 }

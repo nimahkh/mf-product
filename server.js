@@ -3,12 +3,15 @@ const compress = require("koa-compress");
 const mount = require("koa-mount");
 const { join, extname } = require("path");
 const { parseCookie, parseNavLang } = require("./serverHelper");
+const cors = require("@koa/cors");
 
 const isDev = process.env.NODE_ENV === "development";
 
 const root = join(__dirname, "dist");
 
 const app = new Koa();
+app.use(cors());
+
 app.use(
   compress({
     threshold: 2048,
